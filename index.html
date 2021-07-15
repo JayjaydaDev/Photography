@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.K Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">N.K</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="videos/A Mother and Father Kissing their Child.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Creating memories!!</h3>
+            <p>We are here to help you immortalize those special moments, get it touch and lets get to work.</p>
+            <a href="#">Contact Us</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebookz.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitterz.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagramz.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Portraits</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
